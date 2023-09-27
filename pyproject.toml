@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dihub-cqrs"
+version = "0.1.0"
+description = "A CQRS module for DIHub"
+authors = ["Alfarih Faza <alfarihfz@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+homepage = "https://github.com/alfarih31/dihub-cqrs"
+repository = "https://github.com/alfarih31/dihub-cqrs"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dihub = "^0.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
