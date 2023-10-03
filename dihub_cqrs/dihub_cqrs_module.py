@@ -8,6 +8,3 @@ from dihub_cqrs.types import CQRSOption
 @configurable(config_type=CQRSOption)
 @module(providers=[Dispatcher, QueryBus])
 class CQRSModule(IConfigurableModule[CQRSOption]): ...
-
-
-CQRSModule.configure(CQRSOption())

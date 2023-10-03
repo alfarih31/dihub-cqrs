@@ -36,7 +36,7 @@ class RootModule(IRootRunner):
         res1 = await static_dispatcher.dispatch(ACommand(prop=2))
         res = await dispatcher.dispatch(ACommand(prop=1))
 
-        print(res.some == res1.some)
+        print(res.some == res1.some, res, res1)
 
 
 async def main():

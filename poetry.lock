@@ -2,13 +2,13 @@
 
 [[package]]
 name = "dihub"
-version = "0.1.1"
+version = "0.1.9"
 description = "DIHub is a dependency injection framework for Python"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "dihub-0.1.1-py3-none-any.whl", hash = "sha256:c642d0542b8a057b0445c42cd2736779ccc533781220e2b78f67bf8d0de01f69"},
-    {file = "dihub-0.1.1.tar.gz", hash = "sha256:9662c60c86e980776c5ca7c8f08843a9e85bebba1210abf609b87ca44251938d"},
+    {file = "dihub-0.1.9-py3-none-any.whl", hash = "sha256:0d5438453b3f4912286749ebe250d2ee0cec205ccc3e1bcca7d012566dd3ffbd"},
+    {file = "dihub-0.1.9.tar.gz", hash = "sha256:e9822dfdc0351cb882a9b9a9b65fc59712ad1ea87c9ac304278493d51717e646"},
 ]
 
 [metadata]

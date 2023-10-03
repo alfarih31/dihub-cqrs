@@ -1,8 +1,8 @@
-from typing import Type, Dict
+from typing import Type, Dict, Annotated
 
 from dihub.__internal.helpers import AnnotationOf
 from dihub.constants import ROOT_MODULE_DELEGATE
-from dihub.decorators import provider, inject
+from dihub.decorators import provider, inject, export
 from dihub.types import IProviderRunner, IModuleDelegate, IProviderDelegate
 from dihub_cqrs.__internal.helpers import get_command_name
 from dihub_cqrs.constants import DISPATCHER, _COMMAND_HANDLER_ANNOTATIONS
@@ -11,9 +11,10 @@ from dihub_cqrs.types import IDispatcher, IStaticDispatcher, TCommand, TCommandR
 from .static_dispatcher import StaticDispatcher
 
 
+@export
 @provider(token=DISPATCHER)
 class Dispatcher(IDispatcher, IProviderRunner):
-    root_module_delegate: IModuleDelegate = inject(ROOT_MODULE_DELEGATE)
+    root_module_delegate: Annotated[IModuleDelegate, inject(ROOT_MODULE_DELEGATE)]
     command_handler_map: Dict[str, ICommandHandler]
 
     def __init__(self):
